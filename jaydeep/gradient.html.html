@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title> Gradient Effect </title>
+		<script>
+			function chcolor()
+			{
+				var a=document.getElementById("c1").options[c1.selectedIndex].value;
+				var b=document.getElementById("c2").options[c2.selectedIndex].value;
+				var c=document.getElementById("c3").options[c3.selectedIndex].value;
+
+				if(a!=0 && b!=0 && c!=0)
+				{
+					var gr = c + "-gradient("+a+" "+b+")";
+					document.getElementById("bg").style.backgroundImage = gr;			
+				}
+				else
+				{
+					alert("Please Select Proper Values");	
+				}
+			}
+		</script>
+	</head>
+
+<body id = "bg">
+	<center>
+		<h1> Css Gradient Effect </h1>
+		<select id="c1">
+			<options value="0"> First Color </options>
+			<options value="red"> Red </options>
+			<options value="green"> Green </options>
+			<options value="blue"> Blue </options>
+			<options value="black"> Black </options>
+			<options value="dodgerblue"> cyan </options>
+		</select>
+
+		<select id="c2">
+			<options value="0"> Second Color </options>
+			<options value="red"> Red </options>
+			<options value="green"> Green </options>
+			<options value="blue"> Blue </options>
+			<options value="black"> Black </options>
+			<options value="dodgerblue"> cyan </options>
+		</select>
+
+		<select id="c3">
+			<options value="0"> Second Type </options>
+			<options value="linear"> Linear </options>
+			<options value="radial"> Radial </options>
+			<options value="conic"> Conic </options>
+		</select>
+
+		<input type = "button" id = "btn" value = "create gradient effect" onclick = "chcolor()" />
+	
+		</center>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
